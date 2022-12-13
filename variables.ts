@@ -29,3 +29,36 @@ const account: {
     name: 'savings',
     balance: 10
 };
+
+//array of objects
+let accounts: {}[];
+
+//interfaces
+interface IAccount {
+name:string,
+balance:number,
+status?:string,
+deposit?: () => void
+};
+
+const account1: IAccount = {
+    name: 'savings',
+    balance: 10
+};
+
+let accounts1: IAccount[];
+
+class InvestmentAccounts implements IAccount {
+    // name: string;
+    // balance: number;
+    // status?: string | undefined;
+    // deposit?: (() => void) | undefined;
+
+    constructor(public name: any, public balance: any){
+
+    }
+
+    private withdraw(){}
+}
+
+// generics
